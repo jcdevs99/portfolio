@@ -1,0 +1,53 @@
+::marker{
+  color: #1cff1c;
+}
+.texto_aparicion{
+  opacity: 1;
+  animation: aparecer 5s ;
+}
+@keyframes aparecer {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.mifoto{
+  width: 250px;
+  height: 250px;
+}
+.mi_foto_hover{
+  scale: 1;
+  animation: encogimiento_imagen 1s;
+}
+.mi_foto_hover:hover{
+  cursor:grab ;
+  scale:1.12;
+  animation: crecimiento_imagen 1s;
+}
+@keyframes crecimiento_imagen {
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale:1.12
+  }
+}
+@keyframes encogimiento_imagen {
+  0%{
+    scale: 1.12;
+  }
+  100%{
+    scale:1
+  }
+}
+.sms-bg{
+  background-image: url('../../assets/coding.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.plan1{
+  background: rgba(184, 184, 184, 0.658);
+}
