@@ -8,6 +8,14 @@ nav{
   padding: 10px;
   align-items: center;
 }
+nav.barra-de-navegacion{
+  background-color: #ffffff20;
+  backdrop-filter: blur(10px);
+}
+.dark body nav.barra-de-navegacion {
+    background-color: #20202081;
+
+}
 nav ul{
   display: flex;
   gap: 7px;
@@ -18,13 +26,14 @@ nav ul{
   align-items: center;
 }
 .main-logo{
-  background-image: url(../../assets/react.svg);
+  background-image: url(../../assets/logo.svg);
   display: inline-block;
   width: 40px;
   background-size: contain;
   height: 40px;
   animation: spinAndBrightness 10s infinite linear;
 }
+
 
 @keyframes spinAndBrightness {
   0%{
