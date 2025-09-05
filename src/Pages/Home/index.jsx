@@ -18,7 +18,7 @@ const Home = () => {
   document.title = titleNew;
   return (
     <>
-      <section className='w-[100%] max-w-[900px] h-full justify-center pb-20 lg:py-20 my-auto flex gap-[3rem] items-center ss:flex-col lg:flex-row lg:gap-10'>
+      <section className='w-[100%] max-w-[900px] h-full justify-center pb-20 lg:py-20 my-auto flex gap-[3rem]  items-center ss:flex-col lg:flex-row lg:gap-10'>
         <div className='flex flex-col  gap-10 items-center ss:w-[255px]  lg:w-[330px] '>
           <div className='w-auto h-auto dark:border-white border-yellow-500  border-[3px] rounded-full mi_foto_hover '  >
             <img src={foto} alt="mi_foto" className="mifoto rounded-full object-cover" />
@@ -111,38 +111,38 @@ const Home = () => {
           Hoy en día me encuentro desarrollando una aplicación web para conectar pedidos entre proveedores y clientes.
 
         </h3>
+        <p className='w-[60%] min-w-[320px] justify-center'><b>Conecta pedidos</b> es una aplicación web creada para agilizar  ordenes y evitar errores en los pedidos de preventa y ventas. </p>
         <img src={cp} alt="Conecta pedidos" className='cp' />
+        <p className='w-[60%] min-w-[320px] justify-center'>En este proyecto uso lo aprendido y te invito a registrarte ahora que es 100% gratis y asi aumentar el porcentaje de tus ventas. :)</p>
         <a href="https://www.menudigitalx.com/" target="_blank" rel="noopener noreferrer">
-          <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline'>
-            Visitar sitio
-          </button>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-[250px] rounded-xl focus:outline-none focus:shadow-outline'>
+          Visitar sitio
+        </button>
         </a>
       </section>
-      <section className='skills  my-auto flex flex-col gap-10 w-[100%] h-[800px] justify-center text-center py-20  text-[1.8rem] items-center'>
+      <section className='skills  my-auto flex flex-col gap-10 w-[100%] h-auto py-20 justify-center text-center  text-[1.8rem] items-center'>
 
         <div className='w-[100%] flex flex-col items-center gap-10 relative '>
           <h2 className='text-[2.3rem] font-extrabold'>Tengo conocimientos en:</h2>
           <ul className='listaDeSkills list-disc text-start  '>
-            <li className='text-[1.2rem]'>Html.</li>
-            <li className='text-[1.2rem]'>Css.</li>
-            <li className='text-[1.2rem]' >JavaScript.</li>
-            <li className='text-[1.2rem]' >React.js.</li>
-            <li className='text-[1.2rem]'>Nextjs.</li>
-            <li className='text-[1.2rem]'>Vite.js.</li>
-            <li className='text-[1.2rem]'>Mongodb.</li>
+            <li className='text-[1.2rem]'>Html, Css, Javascript.</li>
+            <li className='text-[1.2rem]'>React.js, Vite.js.</li>
             <li className='text-[1.2rem]'>Nodejs.</li>
+            <li className='text-[1.2rem]'>Expressjs</li>
             <li className='text-[1.2rem]'>API RESTFUL.</li>
-            <li className='text-[1.2rem]'>NPM manejo de dependencias.</li>
+            <li className='text-[1.2rem]'>Mongodb.</li>
+            <li className='text-[1.2rem]'>Mongoose</li>
+            <li className='text-[1.2rem]'>Firebase</li>
             <li className='text-[1.2rem]' >Docker (básico).</li>
-            <li className='text-[1.2rem]'>Maquetación web con Responsive Desing(Mobile first).</li>
+            <li className='text-[1.2rem]'>NPM manejo de dependencias.</li>
+            <li className='text-[1.2rem]'>Maquetación web con Responsive Design.</li>
+            <li className='text-[1.2rem]'>Servidores vps.</li>
             <li className='text-[1.2rem]'>GitHub.</li>
-            <li className='text-[1.2rem]'>MySql.</li>
+            {/* <li className='text-[1.2rem]'>MySql.</li> */}
             <li className='text-[1.2rem]'>Tiendas online con Wordpress y pagos online con Woocommerce.</li>
-            <li className='text-[1.2rem]'>Google Analitics.</li>
+            {/* <li className='text-[1.2rem]'>Google Analitics.</li> */}
             <li className='text-[1.2rem]'>Php(Básico).</li>
             <li className='text-[1.2rem]'>Java.</li>
-            <li className='text-[1.2rem]'>Expressjs</li>
-            <li className='text-[1.2rem]'>Mongoose</li>
 
           </ul>
           <Link to='/projects' onClick={scrollToIndex}>
